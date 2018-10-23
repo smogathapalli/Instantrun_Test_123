@@ -7,6 +7,7 @@ import android.location.LocationManager;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 
 import com.example.j1lib.MyClass1;
 import com.example.j2lib.MyClass2;
@@ -31,6 +32,8 @@ public class MainActivity extends AppCompatActivity {
         MyClass2 mc2 = new MyClass2();
 
         Gson gson = new Gson();
+
+        Log.d("Test", "Test");
 
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             // TODO: Consider calling
