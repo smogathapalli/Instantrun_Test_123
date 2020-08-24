@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
 
         int x = 30;
         int y = 20;
+        int z = 40;
 
         AL1 al1 = new AL1();
         JLA jla = new JLA();
